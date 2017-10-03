@@ -1,0 +1,55 @@
+{
+  "albums" : [
+    {
+      "id": 0,
+      "title": "music",
+      "description": "this is a test music album",
+      "videos": [
+        {
+          "title": "Mozart",
+          "description": "random mozart thing",
+          "link": "Rb0UmrCXxVA"
+        },
+        {
+          "title": "Beethoven",
+          "description": "Symphony No. 9",
+          "link": "t3217H8JppI"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "science",
+      "description": "movies about science",
+      "videos": [
+        {
+          "title": "simulation",
+          "description": "this life is a simulation...",
+          "link": "Chfoo9NBEow"
+        },
+        {
+          "title": "string theory",
+          "description": "Michio Kaku Explains String Theory",
+          "link": "kYAdwS5MFjQ"
+        },
+        {
+          "title": "somice boom",
+          "description": "explanation on sonic boom",
+          "link": "JO4_VHM69oI"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "random",
+      "description": "just a random set of videos",
+      "videos": [
+        {
+          "title": "cats",
+          "description": "cats cats cats",
+          "link": "z3U0udLH974"
+        }
+      ]
+    }
+  ]
+}

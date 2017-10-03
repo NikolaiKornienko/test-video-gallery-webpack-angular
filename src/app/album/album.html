@@ -1,0 +1,20 @@
+<a ui-sref="main">Back</a>
+<div class="container">
+    <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Album #{{vm.currentAlbum.id}} - {{vm.currentAlbum.title}}</h1>
+            <h4 class="gallery-desc">{{vm.currentAlbum.description}}</h4>
+        </div>
+        <div align="center">
+            <button class="btn btn-default filter-button" ng-click="vm.openModal()">Add new video</button>
+        </div>
+        <br/>
+        <div class="gallery-product col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-repeat="video in vm.currentAlbum.videos">
+            <a ui-sref="album({albumId: album.id, data: album})"><h2>{{video.title}}</h2></a>
+            <p>{{video.description}}</p>
+            <iframe id="ytplayer" type="text/html"
+                    ng-src="{{vm.trustSrc(video.link)}}"
+                    frameborder="0"/>
+        </div>
+    </div>
+</div>

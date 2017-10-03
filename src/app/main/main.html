@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Video Gallery</h1>
+        </div>
+        <div class="gallery-product col-lg-4 col-md-4 col-sm-4 col-xs-6" ng-repeat="album in vm.albums">
+            <a ui-sref="album({albumId: album.id, data: album})"><h2>{{album.title}}</h2></a>
+            <p>{{album.description}}</p>
+            <iframe id="ytplayer" type="text/html"
+                    ng-src="{{vm.trustSrc(album.videos[0].link)}}"
+                    frameborder="0"/>
+        </div>
+    </div>
+</div>
